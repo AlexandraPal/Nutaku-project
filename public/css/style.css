@@ -1,0 +1,448 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-image: url("../images/header-background-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+}
+.header .header-nutaku-logo {
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.header .header-nutaku-logo img {
+  width: 50%;
+}
+.header .header-title {
+  color: #092644;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header .header-title span {
+  display: none;
+}
+.header .header-subtitle-mobile {
+  color: #092644;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.header .header-subtitle-desktop {
+  display: none;
+}
+.header .header-button {
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  background-color: #da4179;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 6px rgb(16, 67, 120);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header .header-button span:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+.header .header-button span {
+  font-size: 10px;
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: url("../images/header-background-desktop.png");
+    min-height: 500px;
+    justify-content: center;
+  }
+  .header .header-title {
+    font-size: 45px;
+  }
+  .header .header-title span {
+    display: inline-block;
+  }
+  .header .header-subtitle-desktop {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+  .header .header-subtitle-mobile {
+    display: none;
+  }
+  .header .header-button {
+    width: 40%;
+    padding: 20px 10px;
+  }
+  .header .header-button span:first-of-type {
+    font-size: 30px;
+  }
+  .header .header-button span {
+    font-size: 20px;
+  }
+  .header .header-nutaku-logo img {
+    width: 70%;
+  }
+}
+.content-main {
+  display: flex;
+  flex-direction: column;
+}
+.content-main .product-tiles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: -25px;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content-main .product-tiles-container .product-tile:hover {
+  transform: scale(1.1);
+}
+.content-main .product-tiles-container .product-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  transition: transform 0.2s;
+  justify-self: center;
+}
+.content-main .product-tiles-container .product-tile .product-badge {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 0 5px 0;
+  width: 80%;
+  position: absolute;
+  bottom: 98%;
+  left: 10%;
+  background-color: #fff;
+}
+.content-main .product-tiles-container .product-tile .product-badge a {
+  color: #da4179;
+}
+.content-main .product-tiles-container .product-tile .product-image {
+  max-width: 100%;
+}
+.content-main .product-tiles-container .product-tile .product-details {
+  width: 100%;
+  text-align: center;
+  border-top: 4px solid #db3f7b;
+  padding: 14px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.content-main .product-tiles-container .product-tile .product-details-title {
+  font-size: 15px;
+  color: #092644;
+  font-weight: bold;
+}
+.content-main .product-tiles-container .product-tile .product-details-subtitle {
+  font-size: 10px;
+  color: #da4179;
+}
+.content-main .product-tiles-container .product-tile .product-image-container {
+  display: block;
+  line-height: 0;
+}
+.content-main .content-main-button {
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #da4179;
+  border: none;
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  .content-main {
+    padding: 0 80px;
+  }
+  .content-main .product-tiles-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .content-main .product-tiles-container .product-tile {
+    margin-bottom: 50px;
+  }
+  .content-main .product-tiles-container .product-tile .product-image-container {
+    height: auto;
+  }
+  .content-main .product-tiles-container .product-tile .product-badge {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .content-main .product-tiles-container .product-tile .product-details-title {
+    font-size: 20px;
+  }
+  .content-main .product-tiles-container .product-tile .product-details-subtitle {
+    font-size: 15px;
+  }
+  .content-main .product-tiles-container article:nth-child(2) {
+    order: -1;
+  }
+  .content-main .product-tiles-container article:nth-child(3) {
+    order: 1;
+  }
+  .content-main .content-main-button {
+    transition: transform 0.2s;
+    margin-bottom: 40px;
+  }
+  .content-main .content-main-button:hover {
+    transform: scale(1.1);
+  }
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 12px 0 12px;
+  margin-top: 30px;
+}
+.footer .icon-container {
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.footer .icon-container:last-child img {
+  width: 30%;
+  height: 50%;
+  right: 35%;
+  bottom: 25%;
+}
+.footer .icon-container:nth-child(2) img {
+  width: 60%;
+  right: 20%;
+  bottom: 35%;
+}
+.footer .icon-container:nth-child(5) img {
+  width: 35%;
+  right: 32%;
+}
+.footer .icon-container p {
+  display: flex;
+  flex-direction: column;
+}
+.footer .icon-image-container {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.footer .icon-image-container img {
+  width: 40%;
+  position: absolute;
+  right: 30%;
+  bottom: 30%;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 100px;
+  }
+}
+.modal {
+  position: absolute;
+  width: 100%;
+  top: 8%;
+  display: none;
+  margin-top: 10px;
+}
+.modal .modal-image-container {
+  background-image: url("../images/modal-header-golden-week-mobile.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 65%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 100%;
+  right: 20%;
+  margin-bottom: 20px;
+}
+
+.modal[open] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+  display: block;
+}
+
+.modal-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content .form-badge {
+  text-transform: uppercase;
+  background-color: #da4179;
+  color: #fff;
+  font-size: 30px;
+  margin-top: -18px;
+  margin-bottom: 10px;
+  width: 70%;
+  clip-path: polygon(50% 0%, 100% 0, 90% 50%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%, 10% 50%, 0 0);
+}
+.modal-content .form-badge .form-badge-text-desktop {
+  display: none;
+}
+.modal-content .modal-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #da4179;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.modal-content .modal-title .modal-title-desktop {
+  display: none;
+}
+.modal-content .nutaku-logo {
+  background-image: url("../images/nutaku-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25px;
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.modal-form {
+  width: 100%;
+}
+.modal-form .form-container {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form .form-container .newsletter-checkbox-container,
+.modal-form .form-container .terms-checkbox-contaner {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #da4179;
+}
+.modal-form .form-container .terms-checkbox-contaner {
+  margin-bottom: 20px;
+}
+.modal-form input {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+}
+.modal-form input::placeholder {
+  color: #989898;
+  opacity: 1;
+}
+.modal-form .modal-button {
+  background-color: #da4179;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.modal-form .modal-login {
+  margin-bottom: 10px;
+}
+.modal-form .modal-login-anchor {
+  color: #da4179;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .modal {
+    width: 15%;
+    left: 42%;
+    min-width: 400px;
+  }
+  .modal .modal-image-container {
+    background-image: url("../images/modal-header-golden-week-desktop.png");
+    height: 58px;
+    width: 150%;
+    bottom: 100%;
+    right: -22%;
+    margin-bottom: 30px;
+    min-height: 58px;
+  }
+  .modal .form-badge .form-badge-text-desktop {
+    display: block;
+  }
+  .modal .form-badge .form-badge-text-mobile {
+    display: none;
+  }
+  .modal .nutaku-logo {
+    width: 38%;
+    height: 20px;
+    min-height: 30px;
+  }
+  .modal .modal-title-desktop {
+    display: block;
+  }
+  .modal .modal-title-mobile {
+    display: none;
+  }
+  .modal .modal-login {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .modal .newsletter-checkbox-container,
+.modal .terms-checkbox-contaner {
+    font-size: 12px;
+  }
+  .modal #newsletter-checkbox,
+.modal #terms-checkbox {
+    cursor: pointer;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #81be73 url("../images/grass-background-mobile.jpg");
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

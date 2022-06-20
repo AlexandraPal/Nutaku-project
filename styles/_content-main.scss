@@ -1,0 +1,133 @@
+.content-main {
+  display: flex;
+  flex-direction: column;
+  
+  .product-tiles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: -25px;
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+
+    .product-tile:hover {
+      transform: scale(1.1);
+    }
+
+    .product-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-bottom: 25px;
+      transition: transform .2s;
+      justify-self: center;
+  
+      .product-badge {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 2px;
+        padding: 5px 0 5px 0;
+        width: 80%;
+        position: absolute;
+        bottom: 98%;
+        left: 10%;
+        background-color: #fff;
+
+        a {
+          color: $primary-color;
+        }
+      }
+
+      .product-image {
+        max-width: 100%;
+      }
+
+      .product-details {
+        width: 100%;
+        text-align: center;
+        border-top: 4px solid #db3f7b;
+        padding: 14px 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .product-details-title {
+          font-size: 15px;
+          color: $secondary-color;
+          font-weight: bold;
+        }
+
+        .product-details-subtitle {
+          font-size: 10px;
+          color: $primary-color;
+        }
+
+        .product-image-container {
+          display: block;
+          line-height: 0;
+        }
+    }
+  }
+  
+  .content-main-button {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    border: none;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-main {
+    padding: 0 80px;
+
+    .product-tiles-container {
+      grid-template-columns: repeat(4, 1fr);
+
+      .product-tile {
+        margin-bottom: 50px;
+
+        .product-image-container {
+          height: auto;
+        }
+
+        .product-badge {
+          padding: 10px;
+          font-size: 18px;
+        }
+
+        .product-details-title {
+          font-size: 20px;
+        }
+
+        .product-details-subtitle {
+          font-size: 15px;
+        }
+      }
+
+      article:nth-child(2) {
+        order: -1;
+      }
+
+      article:nth-child(3) {
+        order: 1;
+      }
+    }
+
+    .content-main-button {
+      transition: transform .2s;
+      margin-bottom: 40px;
+    }
+
+    .content-main-button:hover {
+      transform: scale(1.1);
+    }
+  }
+}

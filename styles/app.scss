@@ -1,0 +1,29 @@
+@import './variables';
+@import './header';
+@import './content-main';
+@import './footer';
+@import './modal';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #81be73 url("../images/grass-background-mobile.jpg");
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+}
+
+

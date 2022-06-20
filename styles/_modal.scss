@@ -1,0 +1,184 @@
+.modal {
+  position: absolute;
+  width: 100%;
+  top: 8%;
+  display: none;
+  margin-top: 10px;
+
+  .modal-image-container {
+    background-image: url("../images/modal-header-golden-week-mobile.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 65%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 100%;
+    right: 20%;
+    margin-bottom: 20px;
+  }
+}
+
+.modal[open] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99;
+  display: block;
+}
+
+.modal-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .form-badge {
+    text-transform: uppercase;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 30px;
+    margin-top: -18px;
+    margin-bottom: 10px;
+    width: 70%;
+    clip-path: polygon(50% 0%, 100% 0, 90% 50%, 100% 100%, 100% 100%, 50% 100%, 0 100%, 0 100%, 10% 50%, 0 0);
+
+    .form-badge-text-desktop {
+      display: none;
+    }
+  }
+
+  .modal-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $primary-color;
+    font-style: italic;
+    margin-bottom: 5px;
+
+    .modal-title-desktop {
+      display: none;
+    }
+  }
+
+  .nutaku-logo {
+    background-image: url("../images/nutaku-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25px;
+    width: 35%;
+    margin-bottom: 10px;
+  }
+}
+
+.modal-form {
+  width: 100%;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+
+    .newsletter-checkbox-container,
+    .terms-checkbox-contaner {
+      text-align: left;
+      margin-bottom: 5px;
+      color: $primary-color;
+    }
+
+    .terms-checkbox-contaner {
+      margin-bottom: 20px;
+    }
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #9f9f9f;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: #989898;
+      opacity: 1;
+    }
+  }
+
+  .modal-button {
+    background-color: $primary-color;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .modal-login {
+    margin-bottom: 10px;
+  }
+
+  .modal-login-anchor {
+    color: $primary-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal {
+    width: 15%;
+    left: 42%;
+    min-width: 400px;
+
+    .modal-image-container {
+      background-image: url("../images/modal-header-golden-week-desktop.png");
+      height: 58px;
+      width: 150%;
+      bottom: 100%;
+      right: -22%;
+      margin-bottom: 30px;
+      min-height: 58px;
+    }
+
+    .form-badge {
+      .form-badge-text-desktop {
+        display: block;
+      }
+
+      .form-badge-text-mobile {
+        display: none;
+      }
+    }
+
+    .nutaku-logo {
+      width: 38%;
+      height: 20px;
+      min-height: 30px;
+    }
+
+    .modal-title-desktop {
+      display: block;
+    }
+
+    .modal-title-mobile {
+      display: none;
+    }
+
+    .modal-login {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .newsletter-checkbox-container,
+    .terms-checkbox-contaner {
+      font-size: 12px;
+    }
+
+    #newsletter-checkbox,
+    #terms-checkbox {
+      cursor: pointer;
+    }
+  }
+}

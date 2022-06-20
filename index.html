@@ -5,97 +5,204 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nutaku Golden Week</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="/public/css/style.css">
+  <script src="components.js"></script>
 </head>
 <body>
+  <div class="overlay"></div>
   <header class="header">
-    <div class="header-logo">
-
+    <div class="header-nutaku-logo">
+      <img src="./public/images/nutaku-logo.png" alt="Nutaku logo">
     </div>
-    <div class="header-title">
-
-    </div>
-    <div class="header-subtitle">
-
-    </div>
-    <button></button>
+    <h1 class="header-title">Golden week <span>sale</span></h1>
+    <p class="header-subtitle-mobile">Free android sex games</p>
+    <p class="header-subtitle-desktop">Gold deals for a limited time</p>
+    <button class="header-button"><span>Play for free</span><span>limited time offers</span></button>
   </header>
   <main class="content-main">
-    <article class="product-tile">
-      <div class="product-badge">
-        <p>Play free now!</p>
-      </div>
-      <div class="product-image-container">
-
-      </div>
-      <div class="product-details">
-        <p class="product-details-title">Kamihime Project</p>
-        <p class="product-details-subtitle">Elaborate Turn-Based Strategy</p>
-      </div>
-    </article>
-    <article class="product-tile">
-      <div class="product-badge">
-        <p>Play free now!</p>
-      </div>
-      <div class="product-image-container">
-
-      </div>
-      <div class="product-details">
-        <p class="product-details-title">Crystal Maidens</p>
-        <p class="product-details-subtitle">Thrilling Real-Time Action</p>
-      </div>
-    </article>
-    <article class="product-tile">
-      <div class="product-badge">
-        <p>Play free now!</p>
-      </div>
-      <div class="product-image-container">
-
-      </div>
-      <div class="product-details">
-        <p class="product-details-title">Pocket Waifu</p>
-        <p class="product-details-subtitle">Sexy Dating Sim</p>
-      </div>
-    </article>
-    <article class="product-tile">
-      <div class="product-badge">
-        <p>Play free now!</p>
-      </div>
-      <div class="product-image-container">
-
-      </div>
-      <div class="product-details">
-        <p class="product-details-title">Attack On Moe H</p>
-        <p class="product-details-subtitle">One-Handed Action Game</p>
-      </div>
-    </article>
-    <button>More free games</button>
+    <div class="product-tiles-container">
+      <article class="product-tile">
+        <div class="product-badge">
+          <a href="https://www.nutaku.net/games/kamihime-r/" title="Kamihime Project" target="_blank" rel="noopener noreferrer">Play free now!</a>
+        </div>
+        <div class="product-image-container">
+          <a href="https://www.nutaku.net/games/kamihime-r/" title="Kamihime Project" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)"
+              srcset="public/images/kamihime-project-game-poster-mobile.jpg"
+              >
+  
+              <source media="(min-width: 769px)"
+              srcset="public/images/kamihime-project-game-poster-desktop.jpg"
+              >
+              <img 
+              class="product-image" 
+              alt="Kamihime Project game"
+              src="public/images/kamihime-project-game-poster-mobile.jpg"
+              >
+            </picture>
+          </a>
+        </div>
+        <div class="product-details">
+          <a href="https://www.nutaku.net/games/kamihime-r/" class="product-details-title" title="Kamihime Project" target="_blank" rel="noopener noreferrer">Kamihime Project</a>
+          <a href="https://www.nutaku.net/games/kamihime-r/" class="product-details-subtitle" title="Kamihime Project" target="_blank" rel="noopener noreferrer">Elaborate Turn-Based Strategy</a>
+        </div>
+      </article>
+      <article class="product-tile">
+        <div class="product-badge">
+          <a href="https://www.nutaku.net/games/crystal-maidens/" title="Crystal Maidens" target="_blank" rel="noopener noreferrer">Play free now!</a>
+        </div>
+        <div class="product-image-container">
+          <a href="https://www.nutaku.net/games/crystal-maidens/" title="Crystal Maidens" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)"
+              srcset="public/images/crystal-maidens-game-poster-mobile.jpg"
+              >
+  
+              <source media="(min-width: 769px)"
+              srcset="public/images/crystal-maidens-game-poster-desktop.png"
+              >
+              <img 
+              class="product-image" 
+              alt="Crystal Maidens game"
+              src="public/images/crystal-maidens-game-poster-mobile.jpg"
+              >
+            </picture>
+          </a>
+        </div>
+        <div class="product-details">
+          <a href="https://www.nutaku.net/games/crystal-maidens/" class="product-details-title" title="Crystal Maidens" target="_blank" rel="noopener noreferrer">Crystal Maidens</a>
+          <a href="https://www.nutaku.net/games/crystal-maidens/" class="product-details-subtitle" title="Crystal Maidens" target="_blank" rel="noopener noreferrer">Thrilling Real-Time Action</a>
+        </div>
+      </article>
+      <article class="product-tile">
+        <div class="product-badge">
+          <a href="https://www.nutaku.net/games/pocket-waifu/" title="Pocket Waifu" target="_blank" rel="noopener noreferrer">Play free now!</a>
+        </div>
+        <div class="product-image-container">
+          <a href="https://www.nutaku.net/games/pocket-waifu/" title="Pocket Waifu" target="_blank" rel="noopener noreferrer">
+            <picture>
+              <source media="(max-width: 768px)"
+              srcset="public/images/pocket-waifu-game-poster-mobile.jpg"
+              >
+  
+              <source media="(min-width: 769px)"
+              srcset="public/images/pocket-waifu-game-poster-desktop.jpg"
+              >
+              <img 
+              class="product-image" 
+              alt="Pocket Waifu game"
+              src="public/images/pocket-waifu-game-poster-mobile.jpg"
+              >
+            </picture>
+          </a>
+        </div>
+        <div class="product-details">
+          <a href="https://www.nutaku.net/games/pocket-waifu/" class="product-details-title" title="Pocket Waifu" target="_blank" rel="noopener noreferrer">Pocket Waifu</a>
+          <a href="https://www.nutaku.net/games/pocket-waifu/" class="product-details-subtitle" title="Pocket Waifu" target="_blank" rel="noopener noreferrer">Sexy Dating Sim</a>
+        </div>
+      </article>
+      <article class="product-tile">
+          <div class="product-badge">
+            <a href="https://www.nutaku.net/games/attack-on-moe-h/" title="Attack on Moe H" target="_blank" rel="noopener noreferrer">Play free now!</a>
+          </div>
+          <div class="product-image-container">
+            <a href="https://www.nutaku.net/games/attack-on-moe-h/" title="Attack on Moe H" target="_blank" rel="noopener noreferrer"> 
+              <picture>
+                <source media="(max-width: 768px)"
+                srcset="public/images/attack-on-moeh-game-poster-mobile.jpg"
+                >
+    
+                <source media="(min-width: 769px)"
+                srcset="public/images/attack-on-moeh-game-poster-desktop.jpg"
+                >
+                <img 
+                class="product-image" 
+                alt="Attack On Moe H game"
+                src="public/images/attack-on-moeh-game-poster-mobile.jpg"
+                >
+              </picture>
+            </a>
+          </div>
+          <div class="product-details">
+            <a href="https://www.nutaku.net/games/attack-on-moe-h/" class="product-details-title" title="Attack on Moe H" target="_blank" rel="noopener noreferrer">Attack On Moe H</a>
+            <a href="https://www.nutaku.net/games/attack-on-moe-h/" class="product-details-subtitle" title="Attack on Moe H" target="_blank" rel="noopener noreferrer">One-Handed Action Game</a>
+          </div>
+      </article>
+    </div>
+    <button class="content-main-button">More free games</button>
   </main>
   <footer class="footer">
     <div class="icon-container">
-      <img src="" alt="">
-      <p>Limited time free bonuses</p>
+      <div class="icon-image-container">
+        <img src="./public/images/gift-icon.png" alt="Gift Icon">
+      </div>
+      <p><span>Limited time</span> <span>free bonuses</span></p>
     </div>
     <div class="icon-container">
-      <img src="" alt="">
-      <p>Completely uncensored</p>
+      <div class="icon-image-container">
+        <img src="./public/images/18-icon.png" alt="18+ icon">
+      </div>
+      <p><span>Completely</span> <span>uncensored</span></p>
     </div>
     <div class="icon-container">
-      <img src="" alt="">
-      <p>Free sign up no credit card</p>
+      <div class="icon-image-container">
+        <img src="./public/images/card-icon.png" alt="Credit card icon">
+      </div>
+      <p><span>Free sign up</span> <span>no credit card</span></p>
     </div>
     <div class="icon-container">
-      <img src="" alt="">
-      <p>Free browser games</p>
+      <div class="icon-image-container">
+        <img src="./public/images/browser-icon.png" alt="Screen and mouse icon">
+      </div>
+      <p><span>Free browser</span> <span>games</span></p>
     </div>
     <div class="icon-container">
-      <img src="" alt="">
-      <p>Free computer games</p>
+      <div class="icon-image-container">
+        <img src="./public/images/download-icon.png" alt="Download icon">
+      </div>
+      <p><span>Free computer</span> <span>games</span></p>
     </div>
     <div class="icon-container">
-      <img src="" alt="">
-      <p>Free mobile games</p>
+      <div class="icon-image-container">
+        <img src="./public/images/mobile-icon.png" alt="Mobile phone icon">
+      </div>
+      <p><span>Free mobile</span><span>games</span></p>
     </div>
   </footer>
+
+  <modal-dialog class="modal">
+    <div class="modal-image-container"></div>
+    <div class="modal-content" role="dialog" aria-label="Signup form" aria-modal="true" tabindex="-1">
+      <div class="form-badge">
+        <p class="form-badge-text-mobile">On now!</p>
+        <p class="form-badge-text-desktop">Sale</p>
+      </div>
+      <div class="nutaku-logo"></div>
+      <div class="modal-title">
+        <p class="modal-title-mobile">Limited time offers!</p>
+        <p class="mobile-title-desktop">Over 100 free to play games</p>
+      </div>
+      <form class="modal-form" action="/nutaku_submission_form.php" method="post">
+        <div class="form-container">
+          <input type="email" name="email" id="email" placeholder="E-mail" required>
+          <input type="text" name="username" id="username" placeholder="Username" required>
+          <input type="text" name="password" id="password" placeholder="Password" required>
+          <button type="submit" class="modal-button">Start playing</button>
+          <p class="modal-login">Already have an account <a class="modal-login-anchor">Log in</a></p>
+          <div class="newsletter-checkbox-container">
+            <input type="checkbox" id="newsletter-checkbox" name="newsletter-checkbox" checked>
+            <label for="newsletter-checkbox">Sign up for the newsletter</label>
+          </div>
+          <div class="terms-checkbox-contaner">
+            <input type="checkbox" id="terms-checkbox" name="terms-checkbox">
+            <label for="terms-checkbox">I accept the terms of use and privacy policy</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </modal-dialog>
+  <script src="app.js"></script>
 </body>
 </html>

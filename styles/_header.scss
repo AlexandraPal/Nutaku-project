@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-image: url("../images/header-background-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+
+  .header-nutaku-logo {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .header-title {
+    color: $secondary-color;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .header-title {
+    span {
+      display: none;
+    }
+  }
+
+  .header-subtitle-mobile {
+    color: $secondary-color;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .header-subtitle-desktop {
+    display: none;
+  }
+
+  .header-button {
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 6px rgb(16, 67, 120);
+    border-radius: 5px;
+    cursor: pointer;
+
+    span:first-of-type {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: url("../images/header-background-desktop.png");
+    min-height: 500px;
+    justify-content: center;
+
+    .header-title {
+      font-size: 45px;
+      span {
+        display: inline-block;
+      }
+    }
+  
+    .header-subtitle-desktop {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 25px;
+    }
+  
+    .header-subtitle-mobile {
+      display: none;
+    }
+
+    .header-button {
+      width: 40%;
+      padding: 20px 10px;
+
+      span:first-of-type {
+        font-size: 30px;
+      }
+  
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .header-nutaku-logo {
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
