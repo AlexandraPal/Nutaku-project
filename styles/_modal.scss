@@ -3,7 +3,8 @@
   width: 100%;
   top: 8%;
   display: none;
-  margin-top: 10px;
+  margin-top: 80px;
+  position: fixed;
 
   .modal-image-container {
     background-image: url("../images/modal-header-golden-week-mobile.png");
@@ -56,10 +57,10 @@
     color: $primary-color;
     font-style: italic;
     margin-bottom: 5px;
+  }
 
-    .modal-title-desktop {
-      display: none;
-    }
+  .modal-title-desktop {
+    display: none;
   }
 
   .nutaku-logo {
@@ -129,7 +130,7 @@
 @media (min-width: 992px) {
   .modal {
     width: 15%;
-    left: 42%;
+    left: 40%;
     min-width: 400px;
 
     .modal-image-container {

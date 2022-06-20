@@ -21,7 +21,6 @@ class ModalDialog extends HTMLElement {
 
       if (clickOutsideGameCards) {
         this.showModal();
-        this.overlay.style.display = 'block';
       }
     });
 
@@ -47,6 +46,7 @@ class ModalDialog extends HTMLElement {
 
   showModal() {
     this.setAttribute('open', '');
+    this.overlay.style.display = 'block';
   }
 
   hideModal() {

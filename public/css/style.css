@@ -29,7 +29,7 @@
 }
 .header .header-subtitle-mobile {
   color: #092644;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -46,6 +46,7 @@
   flex-direction: column;
   align-items: center;
   width: 75%;
+  max-width: 300px;
   text-transform: uppercase;
   box-shadow: 0px 3px 6px rgb(16, 67, 120);
   border-radius: 5px;
@@ -83,6 +84,7 @@
   }
   .header .header-button {
     width: 40%;
+    max-width: 400px;
     padding: 20px 10px;
   }
   .header .header-button span:first-of-type {
@@ -98,15 +100,17 @@
 .content-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .content-main .product-tiles-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-top: -25px;
+  gap: 10px;
   max-width: 1320px;
   width: 100%;
   margin: 0 auto;
+  margin-top: -30px;
+  padding: 0 10px;
 }
 .content-main .product-tiles-container .product-tile:hover {
   transform: scale(1.1);
@@ -132,6 +136,7 @@
   bottom: 98%;
   left: 10%;
   background-color: #fff;
+  box-shadow: 0px 3px 6px rgb(16, 67, 120);
 }
 .content-main .product-tiles-container .product-tile .product-badge a {
   color: #da4179;
@@ -147,6 +152,7 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 3px 6px rgb(16, 67, 120);
 }
 .content-main .product-tiles-container .product-tile .product-details-title {
   font-size: 15px;
@@ -168,6 +174,7 @@
   background-color: #da4179;
   border: none;
   padding: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -176,6 +183,8 @@
   }
   .content-main .product-tiles-container {
     grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    gap: 20px;
   }
   .content-main .product-tiles-container .product-tile {
     margin-bottom: 50px;
@@ -202,6 +211,8 @@
   .content-main .content-main-button {
     transition: transform 0.2s;
     margin-bottom: 40px;
+    max-width: 1320px;
+    width: 100%;
   }
   .content-main .content-main-button:hover {
     transform: scale(1.1);
@@ -250,6 +261,7 @@
   width: 70px;
   position: relative;
   margin-bottom: 8px;
+  box-shadow: 0px 2px 4px rgb(105, 105, 105);
 }
 .footer .icon-image-container img {
   width: 40%;
@@ -262,6 +274,8 @@
   .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0 100px;
+    margin: 0 auto;
+    width: 60%;
   }
 }
 .modal {
@@ -269,7 +283,8 @@
   width: 100%;
   top: 8%;
   display: none;
-  margin-top: 10px;
+  margin-top: 80px;
+  position: fixed;
 }
 .modal .modal-image-container {
   background-image: url("../images/modal-header-golden-week-mobile.png");
@@ -320,7 +335,7 @@
   font-style: italic;
   margin-bottom: 5px;
 }
-.modal-content .modal-title .modal-title-desktop {
+.modal-content .modal-title-desktop {
   display: none;
 }
 .modal-content .nutaku-logo {
@@ -381,7 +396,7 @@
 @media (min-width: 992px) {
   .modal {
     width: 15%;
-    left: 42%;
+    left: 40%;
     min-width: 400px;
   }
   .modal .modal-image-container {
